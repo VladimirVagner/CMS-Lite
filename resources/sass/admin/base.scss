@@ -1,0 +1,70 @@
+/*   Core: General style
+----------------------------*/
+html,
+body {
+    background: none repeat scroll 0 0 #ebebeb;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+    font-family: Lato, sans-serif !important;
+}
+body.modal-open {
+    padding: 0 !important;
+}
+/* Layouts */
+.wrapper {
+    display: table;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    top: 0;
+    table-layout: fixed;
+}
+.wrapper:before,
+.wrapper:after {
+    display: table;
+    content: ' ';
+}
+.wrapper:after {
+    clear: both;
+}
+/* Header */
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+    background: $dark;
+}
+header {
+    .logo {
+        display: block;
+        float: left;
+        height: 50px;
+        line-height: 50px;
+        padding: 0 10px;
+        text-align: center;
+        width: 250px;
+    }
+
+    nav {
+        height: 50px;
+        div > a {
+            padding: 10px;
+            margin-left: 5px;
+            background-color: #444954;
+            background-image: none;
+            color: #f9c3c3;
+            border: 1px solid transparent;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
+        }
+    }
+}
+/******* 2.1 HEADER LEFT ******/
